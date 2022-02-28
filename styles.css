@@ -1,0 +1,71 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+	--green: #008248;
+	--darkgreen: #1e3932;
+	--white-sort-of: #f1f8f6;
+	--light-blue: #d4e9e2;
+	--white-dirty: #f3f1e7;
+	--black: #000;
+}
+
+body{
+	width: 100vw;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 17px 25px 17px 17px;
+	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
+}
+
+header>ion-icon{
+	font-size: 30px;
+}
+
+#logo{
+	width: 40px;
+}
+
+nav, nav2{
+	display: none;
+}
+
+main{
+	margin-top: 30px;
+}
+
+#latte{
+	background-color: var(--darkgreen);
+	color: white;
+}
+
+.text-area{
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#latte-image, #ue, #card-img, #black-guy{
+	max-width: 100%;
+	height: auto;
+}
+
+#latte .text-area h2{
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1.6rem;
+}
