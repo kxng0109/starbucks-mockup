@@ -41,7 +41,7 @@ nav, nav2{
 	display: none;
 }
 
-main{
+#latte, #uber, #card, #black{
 	margin-top: 30px;
 }
 
@@ -51,7 +51,7 @@ main{
 }
 
 .text-area{
-	padding: 20px 15px;
+	padding: 1.3rem 1.1rem 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -64,8 +64,25 @@ main{
 	height: auto;
 }
 
-#latte .text-area h2{
+.text-area h2, .text-area+p{
 	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 1.6rem;
+}
+
+#latte p{
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 2rem;
+	margin: 1.3rem 0 2rem;
+}
+
+.main-links{
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 0.25rem 1rem;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 0.9rem;
 }
