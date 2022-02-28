@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	transition: all 1s;
 }
 
 :root{
@@ -64,7 +65,7 @@ nav, nav2{
 	height: auto;
 }
 
-.text-area h2, .text-area+p{
+.text-area h2{
 	font-weight: 600;
 	letter-spacing: 1px;
 	font-size: 1.6rem;
@@ -85,4 +86,43 @@ nav, nav2{
 	color: white;
 	font-weight: 500;
 	font-size: 0.9rem;
+}
+
+#uber, #card, #black{
+	background-color: var(--light-blue);
+	color: var(--darkgreen);
+}
+
+#uta>h2{
+	font-weight: 700;
+	line-height: 1.9rem;
+	letter-spacing: 1.5px;
+}
+
+#uta>p{
+	font-size: 1.3rem;
+	margin: 1.8rem 0;
+}
+
+#uta>a, #cta>a{
+	border-color: var(--darkgreen);
+	color: var(--darkgreen);
+}
+
+#cta>h2{
+	font-size: 1.23rem;
+}
+
+#cta>p{
+	margin: 1.7rem 0;
+	font-size: 0.92rem;
+	line-height: 1.75rem;
+}
+
+.text-area>*{
+	color: var(--black);
+}
+
+.text-area>a{
+	border-color: var(--black);
 }
