@@ -143,6 +143,7 @@ nav2, #nav2-other{
 #nav2-header{
 	padding: 1rem 40% 1rem 1.8rem;
 	background-color: hsl(0, 0%, 98%);
+	cursor: pointer;
 }
 
 #nav2-header>p{
@@ -260,8 +261,11 @@ nav ion-icon, nav2 ion-icon{
 }
 
 .hidden-div{
-	display: none;
+	position: sticky;
 	align-items: flex-start;
+	/*height: 0px;*/
+	z-index: -1;
+	visibility: hidden;
 }
 
 .hidden-div>a{
@@ -279,15 +283,18 @@ nav ion-icon, nav2 ion-icon{
 }
 
 .above-footer, footer{
-	margin: 1.4rem 1.2rem;
+	margin: 1.4rem 1.2rem 0;
 	padding-bottom: 1rem;
 	border-bottom: 2px solid hsl(0, 0%, 88%);
+	background-color: white;
 }
 
 .dropdown-divs{
+	position: relative;
 	padding: 0.6rem 0;
 	margin: 0.7rem 0;
 	cursor: pointer;
+	background-color: white;
 }
 
 .toggle{
@@ -303,17 +310,19 @@ nav ion-icon, nav2 ion-icon{
 
 
 footer{
-	margin-top: 2.2rem;
+	padding-top: 2.2rem;
+	margin-bottom: 2.2rem;
+	margin-top: 0;
 	border: none;
 }
 
 [alt="spotify logo"]{
-	width: 1.8rem;
+	width: 1.9rem;
 }
 
 [name^="logo-"]{
-	font-size: 1.9rem;
-	margin-left: 0.25rem;
+	font-size: 2rem;
+	margin-left: 0.35rem;
 }
 
 #sfd{

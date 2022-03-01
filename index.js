@@ -4,6 +4,9 @@ const nav2 = document.querySelector('#nav2');
 const clickableNav = document.querySelector('#clickable-menu');
 const nav2Header = document.querySelector('#nav2-header');
 const main = document.querySelector('#main');
+const hiddenDiv = document.querySelectorAll('.hidden-div');
+const dropdownDiv = document.querySelectorAll('.dropdown-divs');
+
 
 closedMenu.onclick = () =>{
 	if (closedMenu.getAttribute('name') === 'menu-outline') {
@@ -24,3 +27,22 @@ closedMenu.onclick = () =>{
 clickableNav.onclick = () =>{
 	nav2.style.animation = 'flyIn 0.15s ease-in forwards';
 }
+
+nav2Header.onclick = () =>{
+	nav2.style.animation = 'flyOut 0.15s ease-out forwards';
+}
+
+dropdownDiv.forEach( (element, index) =>{
+	dropdownDiv[index].onclick = () =>{
+		console.log(hiddenDiv[index].offsetHeight)
+		if (hiddenDiv[index].style.height === '' || hiddenDiv[index].style.height === '0px') {
+			hiddenDiv[index].style.visibility = 'visible';
+			hiddenDiv[index].style.zIndex = '0';
+			hiddenDiv[index].style.height = 'auto';
+		}else {			
+			hiddenDiv[index].style.zIndex = '-1';
+			hiddenDiv[index].style.height = '0';
+			hiddenDiv[index].style.visibility = 'hidden';
+		}
+	}
+});
