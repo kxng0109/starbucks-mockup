@@ -13,171 +13,172 @@
 	<title>Starbucks</title>
 </head>
 <body>
-	<header>
-		<img src="images/logo.svg" id="logo" alt="starbucks logo">
-		<ion-icon name="menu-outline" class="menu-closed"></ion-icon>
-		<!-- <ion-icon name="close-outline"></ion-icon> -->
-	</header>
+	<container id="container">
+		<header>
+			<img src="images/logo.svg" id="logo" alt="starbucks logo">
+			<ion-icon name="menu-outline" class="menu-closed"></ion-icon>
+		</header>
 
-	<nav>
-		<div id="top-menu">
-			<div>
+		<nav id="nav">
+			<div id="top-menu">
+				<div id="clickable-menu">
+					<p>Menu</p>
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</div>
+				<a href="#" class="links">Rewards</a>
+				<a href="#" class="links">Gift Cards</a>
+			</div>
+			<div id="middle-menu">
+				<a href="#" class="links">Sign in</a>
+				<a href="#" class="links">Join now</a>
+			</div>
+			<div id="bottom-menu">
+				<ion-icon name="location" id="li"></ion-icon>
+				<p>Find a store</p>
+			</div>
+		</nav>
+
+		<nav2 id="nav2">
+			<div id="nav2-header">
+				<ion-icon name="chevron-back-outline"></ion-icon>
 				<p>Menu</p>
-				<ion-icon name="chevron-forward-outline"></ion-icon>
 			</div>
-			<a href="#" class="links">Rewards</a>
-			<a href="#" class="links">Gift Cards</a>
-		</div>
-		<div id="middle-menu">
-			<a href="#" class="links">Sign in</a>
-			<a href="#" class="links">Join now</a>
-		</div>
-		<div id="bottom-menu">
-			<ion-icon name="location" id="li"></ion-icon>
-			<p>Find a store</p>
-		</div>
-	</nav>
-
-	<nav2>
-		<div id="nav2-header">
-			<ion-icon name="chevron-back-outline"></ion-icon>
-			<p>Menu</p>
-		</div>
-		<div id="nav2-other">
-			<a href="#" class="links">All products</a>
-			<a href="#" class="links">Featured</a>
-			<a href="#" class="links">Previous Orders</a>
-			<a href="#" class="links">Favorite Products</a>
-		</div>
-	</nav2>
-
-	<main>
-		<div id="latte">
-			<img src="images/latte.jpg" id="latte-image" alt="image of a latte">
-			<div class="text-area">
-				<h2>Choose your mood</h2>
-				<p>Go for the comforting flavors of a Pistachio Latte or the lively layers of an Iced Brown Sugar Oatmilk Shaken Espresso.</p>
-				<a href="#" class="main-links">Explore the winter menu</a>
+			<div id="nav2-other">
+				<a href="#" class="links">All products</a>
+				<a href="#" class="links">Featured</a>
+				<a href="#" class="links">Previous Orders</a>
+				<a href="#" class="links">Favorite Products</a>
 			</div>
-		</div>
+		</nav2>
 
-		<div id="uber">
-			<img src="images/uber-eats.jpg" id="ue" alt="images of uber eats">
-			<div class="text-area" id="uta">
-				<h2>Coffee delivered. Day made.</h2>
-				<p>Your go-to order can come to you!*</p>
-				<a href="#" class="main-links">Order now</a>
+		<main id="main">
+			<div id="latte">
+				<img src="images/latte.jpg" id="latte-image" alt="image of a latte">
+				<div class="text-area">
+					<h2>Choose your mood</h2>
+					<p>Go for the comforting flavors of a Pistachio Latte or the lively layers of an Iced Brown Sugar Oatmilk Shaken Espresso.</p>
+					<a href="#" class="main-links">Explore the winter menu</a>
+				</div>
 			</div>
-		</div>
 
-		<div id="card">
-			<img src="images/card.jpg" id="card-img" alt="Starbucks Rewards Card">
-			<div class="text-area" id="cta">
-				<h2>Earning 4,500 Bonus Stars is Super Starifying</h2>
-				<p>Earn more Stars and even more Rewards with a <strong>$0 intro annual fee for your first year</strong> with the Starbucks® Rewards Visa® Card. Plus your Stars won’t expire – an exclusive Starbucks benefit for cardmembers. Now that’s Super Starifying.</p>
-				<a href="#" class="main-links">Learn more</a>
+			<div id="uber">
+				<img src="images/uber-eats.jpg" id="ue" alt="images of uber eats">
+				<div class="text-area" id="uta">
+					<h2>Coffee delivered. Day made.</h2>
+					<p>Your go-to order can come to you!*</p>
+					<a href="#" class="main-links">Order now</a>
+				</div>
 			</div>
-		</div>
 
-		<div id="black">
-			<img src="images/black-history.jpg" id="black-guy" alt="Image of a dark skinned starbucks employee">
-			<div class="text-area" id="bta">
-				<h2>Celebrating Black History Month</h2>
-				<p>Join us as we recognize the everyday Black excellence of our partners (employees). Explore ways to help cultivate the next generation of excellence.</p>
-				<a href="#" class="main-links">Learn more</a>
+			<div id="card">
+				<img src="images/card.jpg" id="card-img" alt="Starbucks Rewards Card">
+				<div class="text-area" id="cta">
+					<h2>Earning 4,500 Bonus Stars is Super Starifying</h2>
+					<p>Earn more Stars and even more Rewards with a <strong>$0 intro annual fee for your first year</strong> with the Starbucks® Rewards Visa® Card. Plus your Stars won’t expire – an exclusive Starbucks benefit for cardmembers. Now that’s Super Starifying.</p>
+					<a href="#" class="main-links">Learn more</a>
+				</div>
 			</div>
-		</div>
 
-		<p id="note">*Menu limited. Restricted delivery area. Available in participating locations only. Fees subject to change. Prices for Starbucks® items purchased through Uber Eats may be higher than posted in stores or as marked. See the Uber Eats app for details.</p>
-	</main>
+			<div id="black">
+				<img src="images/black-history.jpg" id="black-guy" alt="Image of a dark skinned starbucks employee">
+				<div class="text-area" id="bta">
+					<h2>Celebrating Black History Month</h2>
+					<p>Join us as we recognize the everyday Black excellence of our partners (employees). Explore ways to help cultivate the next generation of excellence.</p>
+					<a href="#" class="main-links">Learn more</a>
+				</div>
+			</div>
 
-	<section class="above-footer">
-		<div class="dropdown-divs">
-			<p>About Us</p>
-			<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
-			<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
-		</div>
+			<p id="note">*Menu limited. Restricted delivery area. Available in participating locations only. Fees subject to change. Prices for Starbucks® items purchased through Uber Eats may be higher than posted in stores or as marked. See the Uber Eats app for details.</p>
+		</main>
 
-		<div class="hidden-div">
-			<a href="#" class="links">Our Company</a>
-			<a href="#" class="links">Our Coffee</a>
-			<a href="#" class="links">Stories and News</a>
-			<a href="#" class="links">Starbucks Archieve</a>
-			<a href="#" class="links">Investor Relations</a>
-			<a href="#" class="links">Customer Service</a>
-		</div>
-		
-		<div class="dropdown-divs">
-			<p>Careers</p>
-			<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
-			<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
-		</div>
+		<section class="above-footer">
+			<div class="dropdown-divs">
+				<p>About Us</p>
+				<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
+				<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
+			</div>
 
-		<div class="hidden-div">
-			<a href="#" class="links">Culture and Values</a>
-			<a href="#" class="links">Inclusion, Diversity, and Equity</a>
-			<a href="#" class="links">College Achievement Plan</a>
-			<a href="#" class="links">Alumni Community</a>
-			<a href="#" class="links">U.S. Careers</a>
-			<a href="#" class="links">International Careers</a>
-		</div>
-		
-		<div class="dropdown-divs">
-			<p>Social Impact</p>
-			<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
-			<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
-		</div>
+			<div class="hidden-div">
+				<a href="#" class="links">Our Company</a>
+				<a href="#" class="links">Our Coffee</a>
+				<a href="#" class="links">Stories and News</a>
+				<a href="#" class="links">Starbucks Archieve</a>
+				<a href="#" class="links">Investor Relations</a>
+				<a href="#" class="links">Customer Service</a>
+			</div>
+			
+			<div class="dropdown-divs">
+				<p>Careers</p>
+				<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
+				<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
+			</div>
 
-		<div class="hidden-div">
-			<a href="#" class="links">People</a>
-			<a href="#" class="links">Planet</a>
-			<a href="#" class="links">Environmental and Social Impact Reporting</a>
-		</div>
-		
-		<div class="dropdown-divs">
-			<p>For Business Partners</p>
-			<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
-			<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
-		</div>
+			<div class="hidden-div">
+				<a href="#" class="links">Culture and Values</a>
+				<a href="#" class="links">Inclusion, Diversity, and Equity</a>
+				<a href="#" class="links">College Achievement Plan</a>
+				<a href="#" class="links">Alumni Community</a>
+				<a href="#" class="links">U.S. Careers</a>
+				<a href="#" class="links">International Careers</a>
+			</div>
+			
+			<div class="dropdown-divs">
+				<p>Social Impact</p>
+				<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
+				<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
+			</div>
 
-		<div class="hidden-div">
-			<a href="#" class="links">Landlord Support Center</a>
-			<a href="#" class="links">Suppliers</a>			
-			<a href="#" class="links">Corporate Gift Card Sales</a>
-			<a href="#" class="links">Office and Foodservice Coffee</a>
-		</div>
-		
-		<div class="dropdown-divs">
-			<p>Order and Pickup</p>
-			<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
-			<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
-		</div>
+			<div class="hidden-div">
+				<a href="#" class="links">People</a>
+				<a href="#" class="links">Planet</a>
+				<a href="#" class="links">Environmental and Social Impact Reporting</a>
+			</div>
+			
+			<div class="dropdown-divs">
+				<p>For Business Partners</p>
+				<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
+				<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
+			</div>
 
-		<div class="hidden-div">
-			<a href="#" class="links">Order on the App</a>
-			<a href="#" class="links">Order on the Web</a>			
-			<a href="#" class="links">elivery</a>
-			<a href="#" class="links">Order and Pickup Options</a>
-			<a href="#" class="links">Explore and Find Coffee for Home</a>
-		</div>
-	</section>
+			<div class="hidden-div">
+				<a href="#" class="links">Landlord Support Center</a>
+				<a href="#" class="links">Suppliers</a>			
+				<a href="#" class="links">Corporate Gift Card Sales</a>
+				<a href="#" class="links">Office and Foodservice Coffee</a>
+			</div>
+			
+			<div class="dropdown-divs">
+				<p>Order and Pickup</p>
+				<ion-icon name="chevron-down-outline" class="toggle"></ion-icon>
+				<!-- <ion-icon name="chevron-up-outline" class="toggle"></ion-icon> -->
+			</div>
 
-	<footer>
-		<div id="reach-icons">
-			<img src="images/spotify.svg" alt="spotify logo">
-			<ion-icon name="logo-facebook"></ion-icon>
-			<ion-icon name="logo-pinterest"></ion-icon>
-			<ion-icon name="logo-instagram"></ion-icon>
-			<ion-icon name="logo-youtube"></ion-icon>
-			<ion-icon name="logo-twitter"></ion-icon>
-		</div>
-		<div id="sfd">
-			<a href="#" class="links">Privacy Policy</a>
-			<a href="#" class="links">Terms of Use</a>
-			<a href="#" class="links">CA Supply Chain Act</a>
-			<a href="#" class="links">Cookie Preferences</a>
-		</div>
-		<p>© 2022 Starbucks Coffee Company. All rights reserved.</p>
-	</footer>
+			<div class="hidden-div">
+				<a href="#" class="links">Order on the App</a>
+				<a href="#" class="links">Order on the Web</a>			
+				<a href="#" class="links">elivery</a>
+				<a href="#" class="links">Order and Pickup Options</a>
+				<a href="#" class="links">Explore and Find Coffee for Home</a>
+			</div>
+		</section>
+
+		<footer>
+			<div id="reach-icons">
+				<img src="images/spotify.svg" alt="spotify logo">
+				<ion-icon name="logo-facebook"></ion-icon>
+				<ion-icon name="logo-pinterest"></ion-icon>
+				<ion-icon name="logo-instagram"></ion-icon>
+				<ion-icon name="logo-youtube"></ion-icon>
+				<ion-icon name="logo-twitter"></ion-icon>
+			</div>
+			<div id="sfd">
+				<a href="#" class="links">Privacy Policy</a>
+				<a href="#" class="links">Terms of Use</a>
+				<a href="#" class="links">CA Supply Chain Act</a>
+				<a href="#" class="links">Cookie Preferences</a>
+			</div>
+			<p>© 2022 Starbucks Coffee Company. All rights reserved.</p>
+		</footer>
+	</container>
 </body>
 </html>

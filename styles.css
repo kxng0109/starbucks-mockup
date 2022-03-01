@@ -14,9 +14,13 @@
 	--black: #000;
 }
 
-body{
+body, #container{
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
+}
+
+#container{
+	overflow-y: visible;
 }
 
 header{
@@ -66,6 +70,16 @@ nav, nav2{
 @keyframes flyIn{
 	100%{
 		margin-right: 0%;
+	}
+}
+
+@keyframes flyOut{
+	0%{
+		margin-right: 0%;
+	}
+
+	100%{
+		margin-right: -80%;
 	}
 }
 
