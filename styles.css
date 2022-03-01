@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	transition: all 0.5s;
+	transition: all 0.3s;
 }
 
 :root{
@@ -23,14 +23,23 @@ header{
 	position: sticky;
 	z-index: 2;
 	background-color: white;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
 	padding: 17px 25px 17px 17px;
 	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
 	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
 	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
+}
+
+header, #top-menu>div, .dropdown-divs, #middle-menu, #bottom-menu, #nav2-header{	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.text-area, #note, .hidden-div, #sfd, #top-menu,  #nav2-other{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 header>ion-icon{
@@ -42,31 +51,103 @@ header>ion-icon{
 }
 
 nav, nav2{
-	display: none;
-}
-
-nav{
 	display: block;
 	position: fixed;
 	z-index: 1;
-	top: 0;
+	top: 74px;
 	right: 0;
 	bottom: 0;
 	background-color: white;
 	width: 80%;
-	padding: 6rem 1rem;
+	padding: 2.8rem 1.8rem;
+	margin-right: -80%;
 }
 
-nav>div>*{
-	margin-bottom: 2rem;
+@keyframes flyIn{
+	100%{
+		margin-right: 0%;
+	}
 }
 
-nav>div>div{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+#top-menu>*{
+	margin-bottom: 2.2rem;
+	width: 100%;
 }
+
+#top-menu{	
+	align-items: flex-start;
+	font-size: 1.1rem;
+	border-bottom: 2px solid hsl(0, 0%, 88%);
+}
+
+#top-menu > div{
+	cursor: pointer;
+}
+
+#middle-menu{
+	margin: 2rem 0 1rem;
+	width: 185px;
+}
+
+#middle-menu>*{
+	border: 1px solid var(--black);
+	border-radius: 20px;
+	padding: 0.25rem 0.9rem;
+	font-weight: 600;
+	font-size: 0.85rem;
+}
+
+#middle-menu>a:nth-child(2){
+	background-color: var(--black);
+	color: white;
+}
+
+#bottom-menu{
+	justify-content: flex-start;
+	font-weight: 600;
+	font-size: 0.85rem;
+}
+
+#bottom-menu:hover{
+	color: green;
+}
+
+#li{
+	font-size: 1.3rem;
+	padding-right: 0.5rem;
+}
+nav2{
+	padding: 0;
+}
+
+nav2, #nav2-other{
+	padding-top: 0;
+	align-items: flex-start;
+}
+
+#nav2-header{
+	padding: 1rem 40% 1rem 1.8rem;
+	background-color: hsl(0, 0%, 98%);
+}
+
+#nav2-header>p{
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+#nav2-other{
+	padding: 0 1.8rem;
+}
+
+#nav2-other>*{
+	padding: 1.1rem 0;
+	font-size: 1.1rem;
+}
+
+nav ion-icon, nav2 ion-icon{
+	font-size: 1.3rem;
+}
+
 
 #latte, #uber, #card, #black, #note{
 	margin-top: 30px;
@@ -79,11 +160,8 @@ nav>div>div{
 
 .text-area, #note{
 	padding: 1.3rem 1.1rem 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
+	justify-content: center;
 }
 
 #latte-image, #ue, #card-img, #black-guy{
@@ -101,7 +179,7 @@ nav>div>div{
 	font-size: 1.25rem;
 	font-weight: 500;
 	line-height: 2rem;
-	margin: 1.3rem 0 2rem;
+	margin: 1.3rem 0 2.3rem;
 }
 
 .main-links{
@@ -167,8 +245,6 @@ nav>div>div{
 
 .hidden-div{
 	display: none;
-	/*display: flex;*/
-	flex-direction: column;
 	align-items: flex-start;
 }
 
@@ -193,13 +269,8 @@ nav>div>div{
 }
 
 .dropdown-divs{
-	display: flex;
 	padding: 0.6rem 0;
 	margin: 0.7rem 0;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	/*outline: 1px solid tomato;*/
 	cursor: pointer;
 }
 
@@ -230,8 +301,6 @@ footer{
 }
 
 #sfd{
-	display: flex;
-	flex-direction: column;
 	align-items: flex-start;
 	font-size: 0.9rem;
 	margin: 1.7rem 0 1.1rem;
