@@ -21,12 +21,16 @@ body{
 
 header{
 	position: sticky;
-	z-index: 2;
+	z-index: 3;
 	background-color: white;
-	padding: 17px 25px 17px 17px;
+	padding: 16px 25px 9px 16px;
 	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
 	-webkit-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
 	-moz-box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.25);
+}
+
+.hidden-header, #right-header{
+	display: none;
 }
 
 header, #top-menu>div, .dropdown-divs, #middle-menu, #bottom-menu, #nav2-header{	
@@ -43,7 +47,7 @@ header, #top-menu>div, .dropdown-divs, #middle-menu, #bottom-menu, #nav2-header{
 }
 
 header>ion-icon{
-	font-size: 30px;
+	font-size: 27px;
 }
 
 #logo{
@@ -53,12 +57,14 @@ header>ion-icon{
 #main{
 	padding-top: 30px;
 	background-color: white;
+	position: relative;
+	z-index: 1;
 }
 
 nav, nav2{
 	display: block;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 74px;
 	right: 0;
 	bottom: 0;
@@ -104,7 +110,7 @@ nav, nav2{
 	width: 185px;
 }
 
-#middle-menu>*{
+#middle-menu>*, #right-header>a{
 	border: 1px solid var(--black);
 	border-radius: 20px;
 	padding: 0.25rem 0.9rem;
@@ -112,7 +118,7 @@ nav, nav2{
 	font-size: 0.85rem;
 }
 
-#middle-menu>a:nth-child(2){
+#middle-menu>a:nth-child(2), #right-header>a:last-of-type{
 	background-color: var(--black);
 	color: white;
 }
@@ -127,7 +133,7 @@ nav, nav2{
 	color: green;
 }
 
-#li{
+.li{
 	font-size: 1.3rem;
 	padding-right: 0.5rem;
 }
@@ -166,6 +172,10 @@ nav ion-icon, nav2 ion-icon{
 
 
 #latte, #uber, #card, #black, #note{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	margin-top: 30px;
 }
 
@@ -261,11 +271,18 @@ nav ion-icon, nav2 ion-icon{
 }
 
 .hidden-div{
-	position: sticky;
+	/*position: absolute;*/
 	align-items: flex-start;
-	/*height: 0px;*/
-	z-index: -1;
-	visibility: hidden;
+	/*height: 0px;
+	height: 270px;*/
+	z-index: -6;
+	background-color: white;
+}
+
+.youknow{	
+	position: relative;
+	background-color: white;
+	z-index: -2;
 }
 
 .hidden-div>a{
@@ -283,17 +300,17 @@ nav ion-icon, nav2 ion-icon{
 }
 
 .above-footer, footer{
-	margin: 1.4rem 1.2rem 0;
-	padding-bottom: 1rem;
+	padding: 1.4rem 1.2rem 1rem;
 	border-bottom: 2px solid hsl(0, 0%, 88%);
 	background-color: white;
+	position: relative;
+	z-index: 0;
 }
 
 .dropdown-divs{
-	position: relative;
-	padding: 0.6rem 0;
-	margin: 0.7rem 0;
-	cursor: pointer;
+	padding: 1.1rem 0;
+	/*margin: 0.7rem 0;*/
+	/*cursor: pointer;*/
 	background-color: white;
 }
 
@@ -332,10 +349,40 @@ footer{
 }
 
 #sfd .links{
-	margin-bottom: 1rem;
+	margin-bottom: 1.3rem;
 }
 
 footer>p{
 	font-size: 0.8rem;
 	color: hsl(0, 0%, 50%);
+}
+
+
+@media screen and (min-width: 768px){
+	#latte, #uber, #card, #black, #note{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#latte-image, #ue, #card-img, #black-guy{
+		max-width: 50%;
+	}
+
+	.text-area{
+		width: 50%;
+	}
+
+	.hidden-header, #right-header{
+		display: block;
+	}
+
+	.menu-closed{
+		display: none;
+	}
+
+	#right-header, #left-header{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
