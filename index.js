@@ -14,9 +14,9 @@ let hdHeight = [];
 hiddenDiv.forEach( (element, index) => {
 	hdHeight[index] = hiddenDiv[index].offsetHeight;
 	// hiddenDiv[index].style.zIndex = '-1';
-	hiddenDiv[index].style.position = 'absolute';
+	// hiddenDiv[index].style.position = 'absolute';
 	hiddenDiv[index].style.top = `-${hdHeight[index]}px`;
-	outerHiddenDiv[index].style.height = '0px';
+	// outerHiddenDiv[index].style.height = '0px';
 });
 
 closedMenu.onclick = () =>{
