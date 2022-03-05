@@ -12,7 +12,7 @@ const hiddenLinks = document.querySelectorAll('.hidden-links');
 let deviceWidth;
 let hdHeight;
 
-window.onresize = () =>{
+let determiner = () =>{
 	deviceWidth = window.innerWidth;
 
 	switch (deviceWidth < 1024) {
@@ -23,6 +23,7 @@ window.onresize = () =>{
 				hdHeight[index] = hiddenDiv[index].offsetHeight;
 				outerHiddenDiv[index].style.height = `0`;
 				them.forEach((element, index, array) =>{
+					console.log(hdHeight)
 					setTimeout(() => {
 						them[index].style.position = 'absolute';
 						them[index].style.top = '30px';
@@ -89,11 +90,9 @@ window.onresize = () =>{
 			});
 			break;
 		default:
-			hdHeight = [];
 			hiddenDiv.forEach( (element, index) => {
 				let them = hiddenDiv[index].querySelectorAll('.hidden-links');
-				hdHeight[index] = hiddenDiv[index].offsetHeight;
-				outerHiddenDiv[index].style.height = `${hdHeight[index]}px`;
+				outerHiddenDiv[index].style.height = `auto`;
 				them.forEach((element, index, array) =>{
 					setTimeout(() => {
 						them[index].style.position = 'static';
@@ -105,3 +104,6 @@ window.onresize = () =>{
 		break;
 	}
 };
+
+window.addEventListener('load', determiner);
+window.addEventListener('resize', determiner);

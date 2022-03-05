@@ -489,13 +489,6 @@ footer{
 		font-size: 0.85rem;
 	}
 
-	.above-footer{
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		column-gap: 10px;
-	}
-
 	.dropdown-divs, .youknow{
 		height: auto;
 		z-index: 0;
@@ -529,6 +522,14 @@ footer{
 		padding: 1.4rem 0 1rem;
 	}
 
+	.above-footer{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		column-gap: 10px;
+		padding-bottom: 3rem;
+	}
+
 	.hidden-big{
 		display: none;
 	}
@@ -543,5 +544,9 @@ footer{
 
 	.dropdown-divs{
 		margin-bottom: 0.8rem;
+	}
+
+	.hidden-div>a{
+		margin-top: 1.7rem;
 	}
 }
