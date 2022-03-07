@@ -23,7 +23,6 @@ let determiner = () =>{
 				hdHeight[index] = hiddenDiv[index].offsetHeight;
 				outerHiddenDiv[index].style.height = `0`;
 				them.forEach((element, index, array) =>{
-					console.log(hdHeight)
 					setTimeout(() => {
 						them[index].style.position = 'absolute';
 						them[index].style.top = '30px';

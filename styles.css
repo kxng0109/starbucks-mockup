@@ -19,6 +19,14 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 
+#line{	
+	border-top: 0.5px solid var(--black);
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
 header{
 	position: sticky;
 	z-index: 3;
@@ -37,7 +45,7 @@ header{
 	display: block;
 }
 
-header, #top-menu>div, .dropdown-divs, #middle-menu, #bottom-menu, #nav2-header{	
+#inner-header, #top-menu>div, .dropdown-divs, #middle-menu, #bottom-menu, #nav2-header{	
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -50,7 +58,7 @@ header, #top-menu>div, .dropdown-divs, #middle-menu, #bottom-menu, #nav2-header{
 	align-items: center;
 }
 
-header>ion-icon{
+#inner-header>ion-icon{
 	font-size: 27px;
 }
 
@@ -59,7 +67,7 @@ header>ion-icon{
 }
 
 #main{
-	padding-top: 30px;
+	padding-top: 32px;
 	background-color: white;
 }
 
@@ -178,7 +186,7 @@ nav ion-icon, nav2 ion-icon{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 30px;
+	margin-top: 35px;
 }
 
 #latte{
@@ -188,7 +196,7 @@ nav ion-icon, nav2 ion-icon{
 }
 
 .text-area, #note{
-	padding: 1.3rem 1.1rem 2rem;
+	padding: 1.9rem 1.1rem 2rem;
 	text-align: center;
 	justify-content: center;
 }
@@ -240,6 +248,7 @@ nav ion-icon, nav2 ion-icon{
 #uta>a, #cta>a{
 	border-color: var(--darkgreen);
 	color: var(--darkgreen);
+	padding: 0.4rem 0.95rem;
 }
 
 #cta>h2{
@@ -445,7 +454,7 @@ footer{
 	}
 
 	#logo{
-		margin-right: 1rem;
+		margin-right: 0.95rem;
 	}
 
 	.text-area h2, #uta>h2{
@@ -495,7 +504,7 @@ footer{
 	}
 
 	[name^="logo"]{
-		margin-left: 0.6rem;
+		margin-left: 0.7rem;
 	}
 
 	#sfd{
@@ -505,7 +514,7 @@ footer{
 	}
 
 	#sfd .links{
-		padding: 0 1.5rem 0 1.5rem;
+		padding: 0 1.8rem 0 1.8rem;
 		border-right: 1px solid var(--black);
 	}
 
@@ -526,7 +535,7 @@ footer{
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
-		column-gap: 10px;
+		column-gap: 20px;
 		padding-bottom: 3rem;
 	}
 
@@ -535,7 +544,7 @@ footer{
 	}
 
 	.afdivs{
-		width: 18%;
+		width: 200px;
 	}
 
 	.dropdown-divs>p{
@@ -548,5 +557,35 @@ footer{
 
 	.hidden-div>a{
 		margin-top: 1.7rem;
+	}
+
+	footer>p:last-of-type{
+		margin-bottom: 1.2rem;
+		font-size: 0.85rem;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	footer>*, main>*, #inner-header, footer, .above-footer{
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	.text-area{
+		padding: 2rem 6rem 2rem;
+	}
+}
+
+@media screen and (min-width: 1702px){
+	#left-header{
+		margin-left: -90px;
+	}
+
+	#note{
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		padding: 1.5rem 24rem 2rem;
+		margin: 40px 0 0 0;
 	}
 }
